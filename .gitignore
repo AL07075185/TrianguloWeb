@@ -1,0 +1,16 @@
+# Compilacion (Ant y Maven)
+build/
+dist/
+target/
+*.class
+*.war
+*.jar
+# Configuracion local de NetBeans
+nbproject/private/
+nb-configuration.xml
+nbactions.xml
+# Archivos del sistema
+Thumbs.db
+desktop.ini
+*:Zone.Identifier
+.DS_Store

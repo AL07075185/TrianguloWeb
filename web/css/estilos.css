@@ -1,0 +1,113 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 13 oct 2026
+    Author     : Asus
+*/
+/* Estilos de la aplicación TrianguloWeb */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef3f8;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #1f2a37;
+}
+
+.tarjeta {
+    width: 100%;
+    max-width: 420px;
+    margin: 16px;
+    padding: 28px 32px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin: 0 0 4px;
+    font-size: 1.6rem;
+    color: #0b5394;
+}
+
+.subtitulo {
+    margin: 0 0 20px;
+    color: #5b6573;
+    font-size: 0.95rem;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+input[type="number"] {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px;
+    border: 1px solid #c4ccd6;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input[type="submit"],
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    background: #0b5394;
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+.boton:hover {
+    background: #083d6e;
+}
+
+.formulas {
+    margin-top: 20px;
+    color: #5b6573;
+    font-size: 0.9rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #e3e8ee;
+    text-align: left;
+}
+
+td {
+    text-align: right;
+    font-weight: 600;
+}
+
+.resaltado th,
+.resaltado td {
+    background: #e8f1fb;
+    color: #0b5394;
+}
+
+.error {
+    padding: 12px;
+    border-radius: 6px;
+    background: #fde8e8;
+    color: #9b1c1c;
+}
+
+

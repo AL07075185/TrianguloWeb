@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="es">
+    <head>
+        <title>Triángulo equilátero</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <main class="tarjeta">
+            <h1>Triángulo equilátero</h1>
+            <p class="subtitulo">Cálculo de área y perímetro con JSP y una clase Java</p>
+
+            <form action="resultado.jsp" method="post">
+                <label for="base">Base (b)</label>
+                <input type="number" id="base" name="base" step="any" min="0.01"
+                       placeholder="Ejemplo: 6" required>
+
+                <label for="altura">Altura (h)</label>
+                <input type="number" id="altura" name="altura" step="any" min="0.01"
+                       placeholder="Ejemplo: 5.2" required>
+
+                <input type="submit" value="Calcular">
+            </form>
+
+            <p class="formulas">A = (b &times; h) / 2 &nbsp;&nbsp;|&nbsp;&nbsp; P = 3 &times; b</p>
+        </main>
+    </body>
+</html>
