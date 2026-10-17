@@ -1,6 +1,6 @@
 <%-- 
     Document   : resultado
- Descripcion   : Recibe la base y la altura enviadas desde index.html
+ Descripcion   : Recibe la base y la altura enviadas desde index.jsp
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -32,18 +32,20 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Resultado del triángulo equilatero</title>
-        <link rel="stylesheet" href="css/estilos.css">
+        <%@include file="/WEB-INF/includes/Bootstrap.jsp"%>
     </head>
-    <body>
-        <main class="tarjeta">
-            <h1>Resultado</h1>
+    <body class="bg-light">
+        <%@include file="/WEB-INF/includes/Navbar.jsp"%>
+
+        <main class="card shadow-sm mx-auto my-5 p-4" style="max-width: 30rem;">
+            <h1 class="h3 text-primary">Resultado</h1>
 
             <% if (mensajeError != null) { %>
                 <%-- 3a. Si los datos no son válidos se muestra el error --%>
-                <p class="error"><%= mensajeError %></p>
+                <p class="alert alert-danger"><%= mensajeError %></p>
             <% } else { %>
                 <%-- 3b. Se muestran los datos capturados y los resultados --%>
-                <table>
+                <table class="table">
                     <tr>
                         <th>Base (b)</th>
                         <td><%= String.format("%.2f", triangulo.getBase()) %></td>
@@ -52,18 +54,21 @@
                         <th>Altura (h)</th>
                         <td><%= String.format("%.2f", triangulo.getAltura()) %></td>
                     </tr>
-                    <tr class="resaltado">
+                    <tr class="table-primary">
                         <th>Área A = (b &times; h) / 2</th>
                         <td><%= String.format("%.2f", area) %></td>
                     </tr>
-                    <tr class="resaltado">
+                    <tr class="table-primary">
                         <th>Perímetro P = 3 &times; b</th>
                         <td><%= String.format("%.2f", perimetro) %></td>
                     </tr>
                 </table>
             <% } %>
-
-            <a class="boton" href="index.html">Realizar otro cálculo</a>
+            
+            <a class="btn btn-outline-primary w-100" href="index.jsp">
+                <i class="bi bi-arrow-counterclockwise"></i> Realizar otro cálculo </a>
         </main>
+
+        <%@include file="/WEB-INF/includes/BootstrapJS.jsp"%>
     </body>
 </html>
